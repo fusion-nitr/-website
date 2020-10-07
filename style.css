@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  cursor: none;
 }
 
 main {
@@ -9,7 +10,7 @@ main {
 }
 
 .landing {
-  min-height: 100vh;
+  min-height: 101vh;
   background: url("./image/hero.jpg");
   background-size: cover;
   padding: 0rem 5rem;
@@ -25,16 +26,23 @@ nav {
 .nav-links {
   display: flex;
   list-style: none;
+  justify-content: space-between;
+  padding: 1rem;
+  
+}
+
+.nav-links, h1 {
+  flex: 1;
 }
 
 .nav-links li {
-  padding-left: 10rem;
+  padding-left: 3rem;
   font-size: 1.2vw;
 }
 
 #logo img {
  width: 25%;
-	height: auto;
+ height: auto;
 }
 
 .big-text {
@@ -83,4 +91,28 @@ nav {
 .hide span {
   transform: translateY(100%);
   display: inline-block;
+}
+
+.cursor{
+  width: 3rem;
+  height: 3rem;
+  border: 2px solid black;
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: all 0.3s ease;
+  transition-property: background, transform;
+  transform-origin: 100% 100%;
+  backdrop-filter: grayscale();
+}
+
+.link-grow {
+  transform: scale(1.5);
+  background: black;
+}
+
+.hovered-link {
+  color: white;
+  z-index: 1;
 }
