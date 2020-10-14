@@ -27,3 +27,7 @@ Array.from(navLinks).forEach(link => {
 		link.classList.add('hovered-link');
 	})
 });
+
+$(window).load(function() {
+	$(".loader").fadeOut("slow");;
+});
