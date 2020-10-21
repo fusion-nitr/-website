@@ -1,3 +1,4 @@
+<!-- Author Amlana-P -->
 <?php include('./backend/server.php') ?>
 <!DOCTYPE html>
 <html>
